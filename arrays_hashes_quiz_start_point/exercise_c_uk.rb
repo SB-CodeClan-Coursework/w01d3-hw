@@ -20,12 +20,16 @@ united_kingdom = [
 p "The capital city of Wales is #{united_kingdom[1][:capital] = "Cardiff"}."
 
 # 2. Create a Hash for Northern Ireland and add it to the `united_kingdom` array (The capital is Belfast, and the population is 1,811,000).
-northern_ireland
-[:name]="Northern Ireland"
-[:capital]="Belfast"
-[:population]= "1811000"
+# united_kingdom = Hash.new
+# united_kingdom["northern_ireland"] [:name] = "Northern Ireland" [:capital] = "Belfast"  [:population] = "1811000"
 
-united_kingdom[3] = northern_ireland
+p united_kingdom[3] = {
+  [:name] => "Northern Ireland"
+  [:capital] => "Belfast"
+  [:population] => "1811000"
+}
+
+# united_kingdom[3] = northern_ireland
 
 # 3. Use a loop to print the names of all the countries in the UK.
 for places in united_kingdom
