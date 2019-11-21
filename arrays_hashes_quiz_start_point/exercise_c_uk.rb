@@ -23,12 +23,7 @@ p "The capital city of Wales is #{united_kingdom[1][:capital] = "Cardiff"}."
 # united_kingdom = Hash.new
 # united_kingdom["northern_ireland"] [:name] = "Northern Ireland" [:capital] = "Belfast"  [:population] = "1811000"
 
-northern_ireland = Hash.new
-  { |name, Northern Ireland| name[Northern Ireland]
-  [:name] >> "Northern Ireland"
-  [:capital] >> "Belfast"
-  [:population] >> "1811000"
-}
+# 
 
 # 3. Use a loop to print the names of all the countries in the UK.
 for places in united_kingdom
