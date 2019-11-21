@@ -23,7 +23,7 @@ p "The capital city of Wales is #{united_kingdom[1][:capital] = "Cardiff"}."
 # united_kingdom = Hash.new
 # united_kingdom["northern_ireland"] [:name] = "Northern Ireland" [:capital] = "Belfast"  [:population] = "1811000"
 
-# 
+#
 
 # 3. Use a loop to print the names of all the countries in the UK.
 for places in united_kingdom
@@ -31,3 +31,11 @@ for places in united_kingdom
 end
 
 # 4. Use a loop to find the total population of the UK.
+
+total_population = 0
+
+for country in united_kingdom
+  total_population += country[:population]
+end
+
+p total_population

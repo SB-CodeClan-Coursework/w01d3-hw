@@ -109,5 +109,6 @@ users["Stephen"] = {
   ]
 }
 
-p users["Stephen"]
+p users
+p users.keys.last
 # p "#{users[""]}"
