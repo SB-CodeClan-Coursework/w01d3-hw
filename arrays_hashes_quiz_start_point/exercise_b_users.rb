@@ -97,16 +97,17 @@ p "Erik has a new #{users["Erik"][:pets][4][:species]} and his name is #{users["
 
 # 10. Add another person to the users hash
 users["Stephen"] = {
-:twitter => "egg",
-:lottery_numbers => [1, 2, 3, 4, 5, 6],
-:home_town => "Paris",
-:pets =>[
+  :twitter => "egg",
+  :lottery_numbers => [1, 2, 3, 4, 5, 6],
+  :home_town => "Paris",
+  :pets =>[
 
-  {
-  :name => "Pat",
-  :species => "postman"
-}
-]
+    {
+      :name => "Pat",
+      :species => "postman"
+    }
+  ]
 }
 
-p users
+p users["Stephen"]
+# p "#{users[""]}"

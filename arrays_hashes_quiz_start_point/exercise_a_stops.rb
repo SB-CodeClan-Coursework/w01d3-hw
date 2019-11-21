@@ -19,11 +19,14 @@ stops.delete("Livingston")
 stops.delete_at(2)
 
 #7. Print the number of stops there are in the array?
-p "There are #{stops.count} stops in the array"
+p "There are #{stops.count()} stops in the array"
+p stops.size()
+p stops.length()
 
 #8. Show as many ways as you can to return "Falkirk High" from the array?
 p "Falkirk High is at position #{stops.index("Falkirk High")} in the array"
 p stops[2]
+
 
 #9. Reverse the positions of the stops in the array
 stops.reverse!
